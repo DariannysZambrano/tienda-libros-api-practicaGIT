@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import swaggerUi from "swagger-ui-express";
@@ -91,6 +92,7 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
 
 // 3. MIDDLEWARES BÁSICOS
+app.use(cors());
 app.use(express.json());
 app.use(logger);
 

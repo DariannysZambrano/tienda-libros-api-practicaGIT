@@ -8,7 +8,7 @@ const router = Router();
 // Cuando alguien entre a la raíz de "libros", ejecuta la función del controlador
 
 
-router.get('/', verificarToken, obtenerLibros);
+router.get('/',obtenerLibros);
 
 // Actualizar (Requiere Token y ser Admin)
 router.put('/:id', verificarToken, esAdmin, actualizarLibro);
