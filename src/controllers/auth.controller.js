@@ -32,4 +32,3 @@ export const login = async (req, res, next) => {
   }
 }
 
-//hellou este trabaja esta muy bien realizado, por favor no tocar gracias. 
